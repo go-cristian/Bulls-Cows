@@ -1,7 +1,6 @@
+package co.iyubinest.pikes_and_fixed;
+
 final class GameOver implements Result {
-  public static Result create() {
-    return new GameOver();
-  }
 
   @Override public int hashCode() {
     return super.hashCode();
@@ -13,5 +12,9 @@ final class GameOver implements Result {
 
   @Override public String toString() {
     return "GameOver{}";
+  }
+
+  @Override public boolean isWinner() {
+    return false;
   }
 }
